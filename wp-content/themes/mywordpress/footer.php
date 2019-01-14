@@ -15,13 +15,19 @@
   </div>
   <nav class="uk-navbar-container uk-navbar-transparent uk-margin-top uk-navbar" uk-navbar>
       <div class="uk-navbar-center">
-          <ul class="uk-navbar-nav">
+<!--          <ul class="uk-navbar-nav">
               <li><a href="#">Что такое proalcohol</a></li>
               <li><a href="#">Реклама и спецпроекты</a></li>
               <li><a href="#">Контакты</a></li>
               <li><a href="#">Правила пользования</a></li>
               <li><a href="#">Политика конфедициальности</a></li>
-          </ul>
+          </ul>-->
+            <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'menu-2',
+                    'menu_class' => 'uk-navbar-nav'
+                ));
+            ?>
       </div>
   </nav>
 </footer>

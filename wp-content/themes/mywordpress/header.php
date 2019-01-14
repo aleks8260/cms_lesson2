@@ -15,14 +15,20 @@
     <div class="uk-container">
       <nav class="uk-navbar-container uk-navbar-transparent uk-margin-bottom uk-navbar" uk-navbar>
         <div class="uk-navbar-left">
-            <ul class="uk-navbar-nav">
+<!--            <ul class="uk-navbar-nav">
                  <li>
                     <a href="#">Статьи</a>
                 </li>
                 <li>
                     <a href="#">Рецепты</a>
                 </li>
-            </ul>
+            </ul>-->
+            <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'menu-1',
+                    'menu_class' => 'uk-navbar-nav'
+                ));
+            ?>
         </div>
         <div class="uk-navbar-center">
             <a class="uk-navbar-item uk-logo" href="#">ProAlcohol.com</a>
