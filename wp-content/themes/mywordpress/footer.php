@@ -1,3 +1,4 @@
+
 <footer>
   <div class="uk-container">
     <div class="uk-grid uk-child-width-expand" uk-grid>
@@ -7,9 +8,9 @@
         <p class="copy">© Proalcohol, 2017</p>
       </div>
       <div class="uk-text-right">
-        <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="icon: google"></a>
-        <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="icon: facebook"></a>
-        <a href="" class="uk-icon-button" uk-icon="icon: instagram"></a>
+        <a href="<?= $redux_demo['google'] ?>" class="uk-icon-button uk-margin-small-right" uk-icon="icon: google"></a>
+        <a href="<?= $redux_demo['facebook']?>" class="uk-icon-button  uk-margin-small-right" uk-icon="icon: facebook"></a>
+        <a href="<?= $redux_demo['inst']?>" class="uk-icon-button" uk-icon="icon: instagram"></a>
       </div>      
     </div>
   </div>

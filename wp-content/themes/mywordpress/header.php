@@ -1,3 +1,7 @@
+<?php
+global $redux_demo;  // This is your opt_name.
+//print_r ($redux_demo);
+?>
 <!DOCTYPE html>
 <html lang="ru">
     <head>
@@ -31,7 +35,7 @@
             ?>
         </div>
         <div class="uk-navbar-center">
-            <a class="uk-navbar-item uk-logo" href="#">ProAlcohol.com</a>
+            <a class="uk-navbar-item uk-logo" href="#"><?= $redux_demo['logo'] ?></a>
         </div>
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav">
