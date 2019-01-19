@@ -1,6 +1,6 @@
 <?php
 global $redux_demo;  // This is your opt_name.
-//print_r ($redux_demo);
+print_r ($redux_demo);
 ?>
 <!DOCTYPE html>
 <html lang="ru">

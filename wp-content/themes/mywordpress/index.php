@@ -71,64 +71,19 @@
 <div class="uk-section uk-section-small recept">
   <div class="uk-container">
     <h1 class="uk-heading-line uk-text-center"><span>Рецепты</span></h1>
+
     <div class="uk-grid uk-grid-small uk-grid-match uk-margin-medium-top" uk-grid>
+         <?php foreach ($redux_demo['opt-slides'] as $slides ) : ?>
       <div class="uk-text-center uk-width-1-2 uk-width-1-3@s uk-width-1-4@m uk-width-1-4@l uk-width-1-4@xl">
         <div class="uk-inline-clip uk-transition-toggle">
-            <img src="<?= get_template_directory_uri()?>/template/images/logo.jpg" alt="">
+            <img src="<?=$slides['image']?>" alt="">
             <div class="uk-transition-fade uk-overlay-default uk-position-cover"></div>
-            <div class="uk-position-center">Headline</div>
+            <div class="uk-position-center"><?=$slides['title']?></div>
         </div>
       </div>
-      <div class="uk-text-center uk-width-1-2 uk-width-1-3@s uk-width-1-4@m uk-width-1-4@l uk-width-1-4@xl">
-        <div class="uk-inline-clip uk-transition-toggle">
-            <img src="<?= get_template_directory_uri()?>/template/images/.jpg" alt="">
-            <div class="uk-transition-fade uk-overlay-default uk-position-cover"></div>
-            <div class="uk-position-center">Headline</div>
-        </div>
-      </div>
-      <div class="uk-text-center uk-width-1-2 uk-width-1-3@s uk-width-1-4@m uk-width-1-4@l uk-width-1-4@xl">
-        <div class="uk-inline-clip uk-transition-toggle">
-            <img src="<?= get_template_directory_uri()?>/template/images/slider.jpg" alt="">
-            <div class="uk-transition-fade uk-overlay-default uk-position-cover"></div>
-            <div class="uk-position-center">Headline</div>
-        </div>
-      </div>
-      <div class="uk-text-center uk-width-1-2 uk-width-1-3@s uk-width-1-4@m uk-width-1-4@l uk-width-1-4@xl">
-        <div class="uk-inline-clip uk-transition-toggle">
-            <img src="<?= get_template_directory_uri()?>/template/images/slider.jpg" alt="">
-            <div class="uk-transition-fade uk-overlay-default uk-position-cover"></div>
-            <div class="uk-position-center">Headline</div>
-        </div>
-      </div>
-      <div class="uk-text-center uk-width-1-2 uk-width-1-3@s uk-width-1-4@m uk-width-1-4@l uk-width-1-4@xl">
-        <div class="uk-inline-clip uk-transition-toggle">
-            <img src="<?= get_template_directory_uri()?>/template/images/slider.jpg" alt="">
-            <div class="uk-transition-fade uk-overlay-default uk-position-cover"></div>
-            <div class="uk-position-center">Headline</div>
-        </div>
-      </div>
-      <div class="uk-text-center uk-width-1-2 uk-width-1-3@s uk-width-1-4@m uk-width-1-4@l uk-width-1-4@xl">
-        <div class="uk-inline-clip uk-transition-toggle">
-            <img src="<?= get_template_directory_uri()?>/template/images/slider.jpg" alt="">
-            <div class="uk-transition-fade uk-overlay-default uk-position-cover"></div>
-            <div class="uk-position-center">Headline</div>
-        </div>
-      </div>
-      <div class="uk-text-center uk-width-1-2 uk-width-1-3@s uk-width-1-4@m uk-width-1-4@l uk-width-1-4@xl">
-        <div class="uk-inline-clip uk-transition-toggle">
-            <img src="<?= get_template_directory_uri()?>/template/images/slider.jpg" alt="">
-            <div class="uk-transition-fade uk-overlay-default uk-position-cover"></div>
-            <div class="uk-position-center">Headline</div>
-        </div>
-      </div>
-      <div class="uk-text-center uk-width-1-2 uk-width-1-3@s uk-width-1-4@m uk-width-1-4@l uk-width-1-4@xl">
-        <div class="uk-inline-clip uk-transition-toggle">
-            <img src="<?= get_template_directory_uri()?>/template/images/slider.jpg" alt="">
-            <div class="uk-transition-fade uk-overlay-default uk-position-cover"></div>
-            <div class="uk-position-center">Headline</div>
-        </div>
-      </div>
+          <?php endforeach; ?>
     </div>
+
   </div>
 </div>
 <div class="uk-section uk-section-small news">

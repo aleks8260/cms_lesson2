@@ -265,3 +265,19 @@
             ),
         )
     ) );
+
+Redux::setSection( $opt_name, array(
+        'title'      => 'Рецепты',
+        'id'         => 'additional-slides',
+        'fields'     => array(
+            array(
+                'id'          => 'opt-slides',
+                'type'        => 'slides',
+
+                'placeholder' => array(
+                    'title'       => 'Введите заголовок',
+                    'description' => 'описание',
+                ),
+            ),
+        )
+    ) );
